@@ -1,5 +1,6 @@
 package com.fatec.Projeto;
 
+import com.fatec.Projeto.model.Catalogo;
 import com.fatec.Projeto.model.Produto;
 import com.fatec.Projeto.service.IProdutoServico;
 import org.junit.jupiter.api.Test;
@@ -29,7 +30,7 @@ class ProjetoApplicationTests {
 
 	@Test
 	void ct02_consulta_com_sucesso(){
-		List<Produto> produtos = produtoServico.consultaCatalogo();
+		List<Catalogo> produtos = produtoServico.consultaCatalogo();
 		assertEquals(0,produtos.size());
 	}
 }

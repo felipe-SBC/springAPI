@@ -24,6 +24,10 @@ public class Produto {
         this.quantidadeNoEstoque = quantidadeNoEstoque;
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public String getDescricao() {
         return descricao;
     }
